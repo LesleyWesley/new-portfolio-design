@@ -1,0 +1,293 @@
+/******* BASE STYLES********/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1F202B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 35px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: #01F0F4 1px 0 10px;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
+h5 {
+  color: #FFFFFF;
+  font-size: 1em;
+  font-style: italic;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 1.125em;
+  line-height: 30px;
+}
+
+/******* GRID STYLES*******/
+
+.full-width {
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 90%;
+
+}
+
+.half-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/********HEADER STYLES - MOBILE ******/
+
+header {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+
+header h1 {
+  font-size: 2.25em;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: #01F0F4 1px 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 50%;
+  padding: 0;
+}
+
+header span {
+  padding-left: 20px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  border-top: .5px #45475F solid;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 50%;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    text-shadow: #01F0F4 1px 0 10px;
+    padding: 0;
+}
+
+/**********HERO STYLE - MOBILE ***********/
+
+#hero {
+  background: url("../img/hero-image.png");
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 2px solid #80ffdb;
+  border-bottom: 2px solid #80ffdb;
+  height: 650px;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-size: 2em;
+  line-height: 70px;
+  text-align: center;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  width: 75%;
+  margin-left: 200px;
+}
+
+.profession {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+h2 span {
+  font-family: 'Lobster', cursive;
+}
+
+
+/*********************************************************
+
+      MEDIA QUERIES
+
+**********************************************************/
+
+@media only screen and (min-width:768px) {
+
+  h3 {
+    font-size: 1.5em;
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    margin: 0;
+  }
+
+  header .full-width {
+    justify-content: space-between;
+  }
+
+  header .half-width {
+    width: 49%;
+  }
+
+  header h1 {
+    font-size: 1.85em;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  nav {
+    width: 80%;
+    border: none;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    flex-flow: nowrap;
+    width: 90%;
+    font-size: .85em;
+    justify-content: space-between;
+  }
+
+  /******* HERO SECTION - TABLET ********/
+
+  #hero .full-width {
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    margin: 0;
+    width: 70%;
+    padding: 30px 0 0 0;
+    text-align: center;
+
+  }
+
+  .name {
+    display: flex;
+    justify-content: flex-start;
+    width: 75%;
+    margin-left: 150px;
+  }
+
+  .profession {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+
+
+
+
+  /*****************************************************
+
+        SMALL DESKTOP MEDIA QUERIES
+
+  *****************************************************/
+
+  @media only screen and (min-width: 1024px) {
+    header .half-width {
+      justify-content: flex-start;
+    }
+
+    header h1 {
+      width: 20%;
+    }
+
+  /***** HERO SECTION - SMALL DESKTOP *******/
+
+  h2 {
+    width: 50%;
+  }
+
+  /*****************************************************
+
+        LARGE DESKTOP MEDIA QUERIES
+
+  ******************************************************/
+
+  @media only screen and (min-width:1200px) {
+
+
+    header .half-width {
+      width: 35%;
+      justify-content: flex-start;
+    }
+
+    header h1 {
+      width: 20%;
+    }
+
+    nav {
+      font-size: 1.125em;
+    }
+
+    /***** HERO SECTION - DESKTOP *****/
+
+    h2 {
+      font-size: 3.5em;
+      line-height: 100px;
+    }
+
+    h2 span {
+      font-size: 1.5em;
+    }
