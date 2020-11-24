@@ -196,6 +196,15 @@ h2 strong {
   text-align: center;
 }
 
+#work h3 {
+  margin-bottom: 75px;
+}
+
+#work a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .project {
   display: flex;
   justify-content: center;
@@ -340,7 +349,7 @@ footer p {
 @media only screen and (min-width:768px) {
 
   h3 {
-    font-size: 1.5em;
+    font-size: 3em;
     width: 100%;
   }
 
@@ -351,16 +360,18 @@ footer p {
 
   header .full-width {
     justify-content: space-between;
+    width: 90%;
   }
 
   header .half-width {
     width: 49%;
+    justify-content: space-between;
   }
 
   header h1 {
-    font-size: 1.7em;
+    font-size: 1em;
     justify-content: flex-start;
-    width: 100%;
+    width: 50%;
   }
 
   nav {
@@ -389,4 +400,66 @@ footer p {
 
   h2 strong {
     padding-left: 0;
+  }
+
+  /******* WORK SECTION - TABLET ******/
+
+  #work {
+    margin: 0 0 50px 0;
+  }
+
+  #work .section-heading {
+    width: 70%;
+  }
+
+  #work h3 {
+    margin: 25px 0 0 0;
+  }
+
+
+  #work .project {
+    justify-content: space-between;
+    flex-flow: nowrap;
+  }
+
+  .reverse {
+    order: 0;
+    width: 45%;
+  }
+
+  #work .half-width {
+    align-items: center;
+    width: 45%;
+  }
+
+  #work .description {
+    width: 50%;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  #work h4 {
+    font-size: 1.125em;
+    margin-top: 0;
+  }
+
+  #work h5 {
+    font-size: .85em;
+  }
+
+  #work .description p {
+    margin: 0;
+    font-size: .85em;
+  }
+
+  #unplugged-project {
+  margin: 100px 0;
+}
+
+  #lolcat-clock {
+    margin-bottom: 100px;
+  }
+
+  #magic-8 {
+    margin-bottom: 100px;
   }
