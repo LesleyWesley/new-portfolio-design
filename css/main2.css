@@ -284,7 +284,7 @@ h2 strong {
 
 #about img {
   width: 90%;
-  border-radius: 150px;
+  border-radius: 50%;
   border: 3px #FFFFFF solid;
 }
 
@@ -462,4 +462,47 @@ footer p {
 
   #magic-8 {
     margin-bottom: 100px;
+  }
+
+  /****** ABOUT SECTION - TABLET ******/
+
+    #about .full-width {
+      flex-flow: row wrap;
+    }
+
+    #about .half-width {
+      width: 50%;
+    }
+
+    #about p {
+      font-size: .85em;
+    }
+
+    #about figure {
+      text-align: right;
+      margin-top: 0px;
+    }
+
+    /****** CONTACT SECTION - TABLET *****/
+
+    footer .full-width {
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    footer p {
+      width: 100%;
+    }
+
+    #email-me h4 {
+      margin-bottom: 30px;
+    }
+
+    #copyright {
+      margin: 75px 0 0 0;
+      font-size: .85em;
+    }
+
+
   }
