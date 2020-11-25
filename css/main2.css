@@ -374,6 +374,10 @@ footer p {
     width: 50%;
   }
 
+  header span {
+    padding-left: 9px;
+  }
+
   nav {
     width: 80%;
     border: none;
@@ -506,3 +510,128 @@ footer p {
 
 
   }
+
+  /*****************************************************
+
+        SMALL DESKTOP MEDIA QUERIES
+
+  *****************************************************/
+
+  @media only screen and (min-width: 1024px) {
+    header .half-width {
+      justify-content: flex-start;
+      width: 40%;
+    }
+
+    header h1 {
+      width: 20%;
+    }
+
+    /***** HERO SECTION - SMALL DESKTOP *******/
+
+    h2 {
+      font-size: 2.7em;
+      line-height: 80px;
+    }
+
+    /***** WORK SECTION - SMALL DESKTOP ******/
+
+    #work .description {
+      width: 40%;
+    }
+
+    /***** ABOUT SECTION - SMALL DESKTOP *****/
+
+    #about h3 {
+      margin-bottom: 50px;
+    }
+
+    #about p {
+      font-size: 1.125em;
+    }
+
+
+    }
+
+    /*****************************************************
+
+          LARGE DESKTOP MEDIA QUERIES
+
+    ******************************************************/
+
+    @media only screen and (min-width:1200px) {
+
+      header .full-width {
+        padding: 10px 0;
+      }
+
+
+      header .half-width {
+        width: 35%;
+        justify-content: flex-start;
+      }
+
+      header h1 {
+        width: 20%;
+        font-size: 1.5em;
+      }
+
+      header span {
+        padding-left: 15px;
+      }
+
+      nav {
+        font-size: 1.125em;
+      }
+
+      /***** HERO SECTION - DESKTOP *****/
+
+      h2 {
+        font-size: 2.5em;
+        line-height: 120px;
+      }
+
+      h2 span {
+        font-size: 2.7em;
+      }
+
+      /***** WORK SECTION - DESKTOP *****/
+
+      h3 {
+        font-size: 3em;
+      }
+
+      #work .project {
+        margin: 100px 0;
+        justify-content: space-around;
+      }
+
+      #work .description {
+        width: 35%;
+      }
+
+
+      #work h4 {
+        font-size: 1.5em;
+      }
+
+      #work h5 {
+        font-size: 1em;
+      }
+
+      #work .description p {
+        font-size: 1em;
+      }
+
+      /***** ABOUT SECTION - DESKTOP *****/
+
+      #about .full-width {
+        justify-content: space-around;
+      }
+
+      #about .half-width {
+        width: 40%;
+      }
+
+      
+      }
